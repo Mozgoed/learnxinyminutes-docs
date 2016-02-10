@@ -39,7 +39,7 @@ using System.Net;
 using System.Threading.Tasks;
 using System.IO;
 
-// But this one is not:
+// Но этот или другой:
 using System.Data.Entity;
 // In order to be able to use it, you need to add a dll reference
 // This can be done with the NuGet package manager: `Install-Package EntityFramework`
@@ -879,11 +879,11 @@ on a new line! ""Wow!"", the masses cried";
 
     interface IBreakable
     {
-        bool Broken { get; } // interfaces can contain properties as well as methods & events
+        bool Broken { get; } // интерфейсы могут содержать свойства так же как и методы и события
     }
 
-    // Class can inherit only one other class, but can implement any amount of interfaces, however
-    // the base class name must be the first in the list and all interfaces follow
+    // Класс может наследовать только от одного другого класса, но может реализовывать любое количество интерфейсов, однако
+    // имя базового класса должно быть первым в списке среди остальных интерфейсов, как в следующем примере
     class MountainBike : Bicycle, IJumpable, IBreakable
     {
         int damage = 0;
@@ -903,8 +903,8 @@ on a new line! ""Wow!"", the masses cried";
     }
 
     /// <summary>
-    /// Used to connect to DB for LinqToSql example.
-    /// EntityFramework Code First is awesome (similar to Ruby's ActiveRecord, but bidirectional)
+    /// Используется для подключения к базе данных для примера LinqToSql.
+    /// EntityFramework Code First это замечательный (похож на Ruby's ActiveRecord, но двунаправленный)
     /// http://msdn.microsoft.com/en-us/data/jj193542.aspx
     /// </summary>
     public class BikeRepository : DbContext
@@ -917,7 +917,7 @@ on a new line! ""Wow!"", the masses cried";
         public DbSet<Bicycle> Bikes { get; set; }
     }
     
-    // Classes can be split across multiple .cs files
+    // Классы могут быть разделены на несколько .cs файлов
     // A1.cs
     public partial class A 
     {
@@ -936,7 +936,7 @@ on a new line! ""Wow!"", the masses cried";
         }
     }
     
-    // Program using the partial class "A"
+    // Программа использующая частичный класс "A"
     public class Program 
     {
         static void Main()
@@ -945,20 +945,20 @@ on a new line! ""Wow!"", the masses cried";
             A.A2();
         }
     }
-} // End Namespace
+} // Конец пространства имён
 ```
 
-## Topics Not Covered
+## Не рассмотренные темы
 
- * Attributes
+ * Атрибуты
  * async/await, pragma directives
- * Web Development
+ * Разработка Web приложений
  	* ASP.NET MVC & WebApi (new)
  	* ASP.NET Web Forms (old)
  	* WebMatrix (tool)
- * Desktop Development
- 	* Windows Presentation Foundation (WPF) (new)
- 	* Winforms (old)
+ * Разработка настальных приложений
+ 	* Windows Presentation Foundation (WPF) (новый)
+ 	* Winforms (устаревает)
 
 ## Further Reading
 
