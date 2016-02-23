@@ -29,8 +29,8 @@ C# это элегантный и типо-безопасный объектно
 /// </summary>
 //public void MethodOrClassOrOtherWithParsableHelp() {}
 
-// Specify the namespaces this source code will be using
-// The namespaces below are all part of the standard .NET Framework Class Libary
+// Определение пространств имён, которые будут использованы в коде
+// Эти пространства имён нижу все являются часть стандартной библиотеки классов .NET Framework
 using System;
 using System.Collections.Generic;
 using System.Dynamic;
@@ -41,8 +41,8 @@ using System.IO;
 
 // Но этот или другой:
 using System.Data.Entity;
-// In order to be able to use it, you need to add a dll reference
-// This can be done with the NuGet package manager: `Install-Package EntityFramework`
+// Чтобы получить возможность использования, надо добавить dll ссылку
+// Это может быть сделано с помощь NuGet менеджера пакетов: `Install-Package EntityFramework`
 
 // Namespaces define scope to organize code into "packages" or "modules"
 // Using this code from another source file: using Learning.CSharp;
