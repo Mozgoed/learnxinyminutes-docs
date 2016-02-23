@@ -8,7 +8,7 @@ contributors:
     - ["Wouter Van Schandevijl", "http://github.com/laoujin"]
     - ["Jo Pearce", "http://github.com/jdpearce"]
     - ["Chris Zimmerman", "https://github.com/chriszimmerman"]
-	- ["Alexey Kononov", "https://github.com/Mozgoed"]
+    - ["Alexey Kononov", "https://github.com/Mozgoed"]
 filename: LearnCSharpRu.cs
 lang: ru-ru
 ---
@@ -39,75 +39,75 @@ using System.Net;
 using System.Threading.Tasks;
 using System.IO;
 
-// Но этот или другой:
+// Но это или другое:
 using System.Data.Entity;
 // Чтобы получить возможность использования, надо добавить dll ссылку
 // Это может быть сделано с помощь NuGet менеджера пакетов: `Install-Package EntityFramework`
 
-// Namespaces define scope to organize code into "packages" or "modules"
-// Using this code from another source file: using Learning.CSharp;
+// Пространства имён определяют масштабы организации кода в "пакетах" или "модулях"
+// Используя этот код из другого исходного файла: using Learning.CSharp;
 namespace Learning.CSharp
 {
-    // Each .cs file should at least contain a class with the same name as the file.
-    // You're allowed to do otherwise, but shouldn't for sanity.
+    // Каждый .cs файл должен содержать как минимум один класс с таким же именем как имя файла.
+    // Ничто не мешает сделать иначе, но в этом нет никакого смысла.
     public class LearnCSharp
     {
-        // BASIC SYNTAX - skip to INTERESTING FEATURES if you have used Java or C++ before
+        // ПРОСТЕЙШИЙ СИНТАКСИС - пропустите до ИНТЕРЕСНЫХ ОСОБЕННОСТЕЙ если вы использовали Java или C++ до этого
         public static void Syntax()
         {
-            // Use Console.WriteLine to print lines
+            // Используйте Console.WriteLine чтобы напечатать строки текста
             Console.WriteLine("Hello World");
             Console.WriteLine(
                 "Integer: " + 10 +
                 " Double: " + 3.14 +
                 " Boolean: " + true);
 
-            // To print without a new line, use Console.Write
+            // Для печати без перехода на новую строку используйте Console.Write
             Console.Write("Hello ");
             Console.Write("World");
 
             ///////////////////////////////////////////////////
-            // Types & Variables
+            // Типы & Переменные
             //
-            // Declare a variable using <type> <name>
+            // Объявление переменной производится по шаблону <тип> <имя>
             ///////////////////////////////////////////////////
 
-            // Sbyte - Signed 8-bit integer
+            // Sbyte - Знаковое 8-битное целое число
             // (-128 <= sbyte <= 127)
             sbyte fooSbyte = 100;
 
-            // Byte - Unsigned 8-bit integer
+            // Byte - Беззнаковое 8-битное целое число
             // (0 <= byte <= 255)
             byte fooByte = 100;
 
-            // Short - 16-bit integer
-            // Signed - (-32,768 <= short <= 32,767)
-            // Unsigned - (0 <= ushort <= 65,535)
+            // Short - 16-битное целое число
+            // Со знаком - (-32,768 <= short <= 32,767)
+            // Без знака - (0 <= ushort <= 65,535)
             short fooShort = 10000;
             ushort fooUshort = 10000;
 
-            // Integer - 32-bit integer
+            // Integer - 32-битное целое число
             int fooInt = 1; // (-2,147,483,648 <= int <= 2,147,483,647)
             uint fooUint = 1; // (0 <= uint <= 4,294,967,295)
 
-            // Long - 64-bit integer
+            // Long - 64-битное целое число
             long fooLong = 100000L; // (-9,223,372,036,854,775,808 <= long <= 9,223,372,036,854,775,807)
             ulong fooUlong = 100000L; // (0 <= ulong <= 18,446,744,073,709,551,615)
-            // Numbers default to being int or uint depending on size.
-            // L is used to denote that this variable value is of type long or ulong
+            // Числа по умолчанию становятся int или uint в зависимости от размера числа.
+            // L используется для обозначения, что эта переменная типа long или ulong
 
-            // Double - Double-precision 64-bit IEEE 754 Floating Point
-            double fooDouble = 123.4; // Precision: 15-16 digits
+            // Double - Двойная точность 64-бит IEEE 754 с плавающей точкой
+            double fooDouble = 123.4; // Точность: 15-16 цифр
 
-            // Float - Single-precision 32-bit IEEE 754 Floating Point
-            float fooFloat = 234.5f; // Precision: 7 digits
-            // f is used to denote that this variable value is of type float
+            // Float - Одинарная точность 32-бит IEEE 754 с плавающей точкой
+            float fooFloat = 234.5f; // Точность: 7 цифр
+            // f используется для обозначения, что эта переменная типа float
 
-            // Decimal - a 128-bits data type, with more precision than other floating-point types,
-            // suited for financial and monetary calculations
+            // Decimal - 128-битный тип данных, с большей точностью, чем у других типов с плавающей точкой
+            // предназначен для финансовых и денежных расчётов
             decimal fooDecimal = 150.3m;
 
-            // Boolean - true & false
+            // Boolean - истина (true) или ложь (false)
             bool fooBoolean = true; // or false
 
             // Char - A single 16-bit Unicode character
