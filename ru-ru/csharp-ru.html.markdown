@@ -110,12 +110,12 @@ namespace Learning.CSharp
             // Boolean - истина (true) или ложь (false)
             bool fooBoolean = true; // or false
 
-            // Char - A single 16-bit Unicode character
+            // Char - один 16-битный символ в кодировке Юникод
             char fooChar = 'A';
 
-            // Strings -- unlike the previous base types which are all value types,
-            // a string is a reference type. That is, you can set it to null
-            string fooString = "\"escape\" quotes and add \n (new lines) and \t (tabs)";
+            // Strings -- в отличие от предыдущих базовых типов, которые все являются типом по значению,
+            // тип string является ссылочным типом. Это значит, что ему можно присвоить значение null (отсутствие значения)
+            string fooString = "\"окружённые\" кавычками, а кавычки внутри текста экранируются слэшем \n (новая строка) and \t (табуляция)";
             Console.WriteLine(fooString);
 
             // You can access each character of the string with an indexer:
@@ -923,7 +923,7 @@ on a new line! ""Wow!"", the masses cried";
     {
         public static void A1()
         {
-            Console.WriteLine("Method A1 in class A");
+            Console.WriteLine("Метод A1 в классе A");
         }
     }
     
@@ -932,7 +932,7 @@ on a new line! ""Wow!"", the masses cried";
     {
         public static void A2()
         {
-            Console.WriteLine("Method A2 in class A");
+            Console.WriteLine("Метод A2 в классе A");
         }
     }
     
@@ -951,16 +951,16 @@ on a new line! ""Wow!"", the masses cried";
 ## Не рассмотренные темы
 
  * Атрибуты
- * async/await, pragma directives
+ * async/await, pragma директивы
  * Разработка Web приложений
- 	* ASP.NET MVC & WebApi (new)
- 	* ASP.NET Web Forms (old)
- 	* WebMatrix (tool)
- * Разработка настальных приложений
- 	* Windows Presentation Foundation (WPF) (новый)
+ 	* ASP.NET MVC & WebApi (новое)
+ 	* ASP.NET Web Forms (устарело)
+ 	* WebMatrix (инструмент)
+ * Разработка настольных приложений
+ 	* Windows Presentation Foundation (WPF) (новое)
  	* Winforms (устаревает)
 
-## Further Reading
+## Для дополнительного чтения
 
  * [DotNetPerls](http://www.dotnetperls.com)
  * [C# in Depth](http://manning.com/skeet2)
